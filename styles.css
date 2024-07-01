@@ -155,7 +155,7 @@ header p {
 }
 
 /* Media query for mobile devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .navbar__container {
         padding: 0 10px; /* Adjust padding for smaller screens */
     }
