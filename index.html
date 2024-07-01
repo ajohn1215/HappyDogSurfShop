@@ -206,12 +206,12 @@ By supporting these efforts, we can significantly impact the shelter's ability t
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const toggleButton = document.getElementById('mobile-menu');
-    const menuItems = document.getElementById('menu-items');
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navbarMenu = document.querySelector('.navbar__menu');
 
-    toggleButton.addEventListener('click', function() {
-        menuItems.classList.toggle('active');
+    mobileMenu.addEventListener('click', () => {
+        navbarMenu.classList.toggle('active');
     });
 });
 
