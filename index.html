@@ -24,14 +24,15 @@
             <img src="./HappyDogSurfShopPics/navpic.png" alt="Happy Dogs Surf Shop" class="navbar__image">
         </a>
         <div class="navbar__toggle" id="mobile-menu">
-            <!-- Mobile menu toggle icon (to be implemented with JavaScript) -->
+            <i class="fas fa-bars"></i>
         </div>
-        <ul class="navbar__menu">
+        <ul class="navbar__menu" id="menu-items">
             <li class="navbar__item">
                 <a href="index.html" class="navbar__links">Home</a>
             </li>
             <li class="navbar__btn">
-                <a href="https://www.etsy.com/shop/happydogssurfshop/?etsrc=sdt&dd_referrer=" class="navbar__links">Shop</a>
+                <a href="https://www.etsy.com/shop/happydogssurfshop/?etsrc=sdt&dd_referrer="
+                    class="navbar__links">Shop</a>
             </li>
             <li class="navbar__item">
                 <a href="HappyDogSurfShopBoard.html" class="navbar__links">Board</a>
@@ -40,13 +41,16 @@
                 <a href="HappyDogSurfShopSponsor.html" class="navbar__links">Partners</a>
             </li>
             <li class="navbar__item">
-                <a href="https://www.facebook.com/people/Happy-Dogs-Surf-Shop/61560562483105/" class="navbar__links"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/people/Happy-Dogs-Surf-Shop/61560562483105/"
+                    class="navbar__links"><i class="fab fa-facebook"></i></a>
             </li>
             <li class="navbar__item">
-                <a href="https://www.instagram.com/happydogsurfshop/" class="navbar__links"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/happydogsurfshop/" class="navbar__links"><i
+                        class="fab fa-instagram"></i></a>
             </li>
             <li class="navbar__item">
-                <a href="https://www.linkedin.com/company/happy-dogs-surf-shop/about/" class="navbar__links"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/company/happy-dogs-surf-shop/about/"
+                    class="navbar__links"><i class="fab fa-linkedin"></i></a>
             </li>
             <li class="navbar__btn">
                 <a href="https://gofund.me/4e814aa8" class="navbar__links">Donate</a>
@@ -201,17 +205,19 @@ By supporting these efforts, we can significantly impact the shelter's ability t
     });
 });
 
-    </script>
-   <script>
-    // JavaScript for mobile menu toggle (you need to implement this functionality)
+
+document.addEventListener('DOMContentLoaded', function() {
     const toggleButton = document.getElementById('mobile-menu');
+    const menuItems = document.getElementById('menu-items');
+
     toggleButton.addEventListener('click', function() {
-        // Implement toggle functionality here
-        // Example: toggle navigation menu visibility
-        const menu = document.querySelector('.navbar__menu');
-        menu.classList.toggle('active');
+        menuItems.classList.toggle('active');
     });
-</script>
+});
+
+    </script>
+ 
+
     
 </body>
 </html>

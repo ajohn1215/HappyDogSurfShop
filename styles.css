@@ -124,6 +124,8 @@ header p {
 .navbar__toggle {
     display: none; /* Hide toggle initially */
     cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 .navbar__menu {
