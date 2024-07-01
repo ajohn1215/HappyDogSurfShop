@@ -31,8 +31,7 @@
                 <a href="index.html" class="navbar__links">Home</a>
             </li>
             <li class="navbar__btn">
-                <a href="https://www.etsy.com/shop/happydogssurfshop/?etsrc=sdt&dd_referrer="
-                    class="navbar__links">Shop</a>
+                <a href="https://www.etsy.com/shop/happydogssurfshop/?etsrc=sdt&dd_referrer=" class="navbar__links">Shop</a>
             </li>
             <li class="navbar__item">
                 <a href="HappyDogSurfShopBoard.html" class="navbar__links">Board</a>
@@ -41,16 +40,13 @@
                 <a href="HappyDogSurfShopSponsor.html" class="navbar__links">Partners</a>
             </li>
             <li class="navbar__item">
-                <a href="https://www.facebook.com/people/Happy-Dogs-Surf-Shop/61560562483105/"
-                    class="navbar__links"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/people/Happy-Dogs-Surf-Shop/61560562483105/" class="navbar__links"><i class="fab fa-facebook"></i></a>
             </li>
             <li class="navbar__item">
-                <a href="https://www.instagram.com/happydogsurfshop/" class="navbar__links"><i
-                        class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/happydogsurfshop/" class="navbar__links"><i class="fab fa-instagram"></i></a>
             </li>
             <li class="navbar__item">
-                <a href="https://www.linkedin.com/company/happy-dogs-surf-shop/about/"
-                    class="navbar__links"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/company/happy-dogs-surf-shop/about/" class="navbar__links"><i class="fab fa-linkedin"></i></a>
             </li>
             <li class="navbar__btn">
                 <a href="https://gofund.me/4e814aa8" class="navbar__links">Donate</a>
@@ -58,6 +54,7 @@
         </ul>
     </div>
 </nav>
+
 <body>
     <header id="indexheader" class="animate-on-scroll fadeIn">
         <img src="./HappyDogSurfShopPics/pic 2copy.png" alt="Happy Dogs Surf Shop" class="animate-on-scroll bounceIn">
@@ -205,15 +202,15 @@ By supporting these efforts, we can significantly impact the shelter's ability t
     });
 });
 
-
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
     const mobileMenu = document.getElementById('mobile-menu');
-    const navbarMenu = document.querySelector('.navbar__menu');
+    const menuItems = document.getElementById('menu-items');
 
-    mobileMenu.addEventListener('click', () => {
-        navbarMenu.classList.toggle('active');
+    mobileMenu.addEventListener('click', function() {
+        menuItems.classList.toggle('active');
     });
 });
+
 
     </script>
  
