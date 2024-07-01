@@ -151,38 +151,6 @@ header p {
     margin-right: 15px;
 }
 
-/* Media Query for Mobile */
-@media screen and (max-width: 768px) {
-    .navbar__container {
-        flex-direction: column; /* Stack items vertically */
-        padding: 10px; /* Adjust spacing */
-    }
-
-    .navbar__toggle {
-        display: block; /* Show toggle */
-        order: 1; /* Move toggle to the top */
-        margin-bottom: 10px; /* Space between toggle and logo */
-    }
-
-    .navbar__logo {
-        order: 2; /* Move logo to the middle */
-    }
-
-    .navbar__menu {
-        display: flex; /* Show menu items */
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-        position: static; /* Reset position */
-        background-color: #1E90FF;
-        z-index: 1000; /* Ensure it's above other content */
-    }
-
-    .navbar__item {
-        margin: 10px 0; /* Adjust spacing between menu items */
-    }
-}
-
 /* Animation keyframes */
 @keyframes slideInDown {
     0% {
