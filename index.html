@@ -15,6 +15,7 @@
         gtag('config', 'G-6LW0CG1FVR');
     </script>
 </head>
+
 <nav class="navbar animate-on-scroll slideInDown">
     <div class="navbar__container">
         <a href="index.html" class="navbar__logo">
@@ -27,6 +28,9 @@
             <li class="navbar__item">
                 <a href="index.html" class="navbar__links">Home</a>
             </li>
+            <li class="navbar__btn">
+                <a href="https://www.etsy.com/shop/happydogssurfshop/?etsrc=sdt&dd_referrer=" class="navbar__links">Shop</a>
+            </li>
             <li class="navbar__item">
                 <a href="HappyDogSurfShopBoard.html" class="navbar__links">Board</a>
             </li>
@@ -34,21 +38,13 @@
                 <a href="HappyDogSurfShopSponsor.html" class="navbar__links">Partners</a>
             </li>
             <li class="navbar__item">
-                
                 <a href="https://www.facebook.com/people/Happy-Dogs-Surf-Shop/61560562483105/" class="navbar__links"><i class="fa-brands fa-facebook"></i></a>
             </li>
             <li class="navbar__item">
-                
                 <a href="https://www.instagram.com/happydogsurfshop/" class="navbar__links"><i class="fa-brands fa-instagram"></i></a>
-                
             </li>
             <li class="navbar__item">
-               
-                    <a href="https://www.linkedin.com/company/happy-dogs-surf-shop/about/" class="navbar__links"> <i class="fa-brands fa-linkedin"></i></a>
-              
-            </li>
-            <li class="navbar__btn">
-                <a href="https://www.etsy.com/shop/happydogssurfshop/?etsrc=sdt&dd_referrer=" class="navbar__links">Shop</a>
+                <a href="https://www.linkedin.com/company/happy-dogs-surf-shop/about/" class="navbar__links"><i class="fa-brands fa-linkedin"></i></a>
             </li>
             <li class="navbar__btn">
                 <a href="https://gofund.me/4e814aa8" class="navbar__links">Donate</a>
@@ -56,7 +52,6 @@
         </ul>
     </div>
 </nav>
-
 
 <body>
     <header id="indexheader" class="animate-on-scroll fadeIn">
@@ -76,6 +71,7 @@
                 Check out our collection of stylish, surf-themed t-shirts and hats. Every purchase supports dog rescue and welfare organizations.
             </p>
             <div class="video-gallery animate-on-scroll fadeInUp">
+                
                 <div>
                     <video src="./HappyDogSurfShopPics/Happy Dog 'Coastal Classic' Double-Sided Tee.mp4" autoplay loop muted></video>
                     <div class="video-info">
@@ -192,6 +188,22 @@ By supporting these efforts, we can significantly impact the shelter's ability t
 
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('load', handleScroll);
+        document.addEventListener('DOMContentLoaded', function () {
+    const videos = document.querySelectorAll('video[autoplay]');
+    videos.forEach(video => {
+        video.addEventListener('ended', function () {
+            // Restart the video
+            this.currentTime = 0;
+            this.play();
+        });
+    });
+});
+
+    </script>
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.querySelector('.navbar__menu').classList.toggle('active');
+        });
     </script>
 </body>
 </html>
