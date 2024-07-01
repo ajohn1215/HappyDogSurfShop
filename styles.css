@@ -160,6 +160,12 @@ header p {
 
     .navbar__toggle {
         display: block; /* Show toggle */
+        order: 1; /* Move toggle to the top */
+        margin-bottom: 10px; /* Space between toggle and logo */
+    }
+
+    .navbar__logo {
+        order: 2; /* Move logo to the middle */
     }
 
     .navbar__menu {
