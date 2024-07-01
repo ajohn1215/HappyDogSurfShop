@@ -169,19 +169,13 @@ header p {
     }
 
     .navbar__menu {
-        display: none; /* Hide menu items by default */
+        display: flex; /* Show menu items */
         width: 100%;
         flex-direction: column;
         text-align: center;
-        position: absolute;
-        top: 60px; /* Adjust to match your navbar height */
-        left: 0;
+        position: static; /* Reset position */
         background-color: #1E90FF;
         z-index: 1000; /* Ensure it's above other content */
-    }
-
-    .navbar__menu.active {
-        display: flex; /* Show menu items when active */
     }
 
     .navbar__item {
@@ -607,6 +601,7 @@ footer p {
                 align-items: center;
             }
         }
+        
 
         /* Animation on scroll */
         .animate-on-scroll {
