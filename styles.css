@@ -157,7 +157,7 @@ header p {
     .navbar__menu {
         display: none;
         flex-direction: column;
-        width: 100%;
+        width: 1000%;
         background-color: #1E90FF ;
     }
 
