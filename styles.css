@@ -97,6 +97,7 @@ header p {
 .navbar {
     background-color: #1E90FF;
     padding: 10px 0;
+    width: 100%;
 }
 
 .navbar__container {
@@ -151,19 +152,21 @@ header p {
     margin-right: 15px;
 }
 
-/* Media Query for Mobile */
+/* Mobile-specific styles */
 @media screen and (max-width: 768px) {
     .navbar__container {
         flex-direction: column; /* Stack items vertically */
         padding: 10px; /* Adjust spacing */
-        position: relative; /* Ensure relative positioning for absolute children */
+    }
+
+    .navbar__logo {
+        order: 1; /* Move logo to the top */
+        margin-bottom: 10px; /* Space between logo and toggle */
     }
 
     .navbar__toggle {
         display: block; /* Show toggle */
-        order: 1; /* Move toggle to the top */
-        margin-bottom: 10px; /* Space between toggle and logo */
-        cursor: pointer; /* Change cursor to pointer for usability */
+        order: 2; /* Move toggle below logo */
     }
 
     .navbar__menu {
@@ -174,10 +177,9 @@ header p {
         position: absolute;
         background-color: #1E90FF;
         z-index: 1000; /* Ensure it's above other content */
-        top: 100%; /* Position below the navbar */
+        top: 60px; /* Adjust based on your navbar height */
         left: 0;
         transition: all 0.3s ease-in;
-        box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Add shadow for depth */
     }
 
     .navbar__menu.active {
@@ -192,15 +194,12 @@ header p {
         text-decoration: none;
         color: #fff;
         transition: color 0.3s ease;
-        padding: 10px 15px; /* Increase touch area */
-        display: block; /* Ensure full width clickable */
     }
 
     .navbar__links:hover {
         color: #bbb;
     }
 }
-
 
 /* Animation keyframes */
 @keyframes slideInDown {
