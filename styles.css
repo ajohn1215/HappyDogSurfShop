@@ -152,54 +152,6 @@ header p {
     margin-right: 15px;
 }
 
-/* Mobile-specific styles */
-@media screen and (max-width: 768px) {
-    .navbar__container {
-        flex-direction: column; /* Stack items vertically */
-        padding: 10px; /* Adjust spacing */
-    }
-
-    .navbar__logo {
-        order: 1; /* Move logo to the top */
-        margin-bottom: 10px; /* Space between logo and toggle */
-    }
-
-    .navbar__toggle {
-        display: block; /* Show toggle */
-        order: 2; /* Move toggle below logo */
-    }
-
-    .navbar__menu {
-        display: none; /* Hide menu items initially */
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-        position: absolute;
-        background-color: #1E90FF;
-        z-index: 1000; /* Ensure it's above other content */
-        top: 60px; /* Adjust based on your navbar height */
-        left: 0;
-        transition: all 0.3s ease-in;
-    }
-
-    .navbar__menu.active {
-        display: flex; /* Show menu items */
-    }
-
-    .navbar__item {
-        margin: 10px 0; /* Adjust spacing between menu items */
-    }
-
-    .navbar__links {
-        text-decoration: none;
-        color: #fff;
-        transition: color 0.3s ease;
-    }
-
-    .navbar__links:hover {
-        color: #bbb;
-    }
-}
 
 /* Animation keyframes */
 @keyframes slideInDown {
