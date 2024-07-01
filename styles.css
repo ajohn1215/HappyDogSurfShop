@@ -166,11 +166,6 @@ header p {
         cursor: pointer; /* Change cursor to pointer for usability */
     }
 
-    .navbar__logo {
-        order: 2; /* Move logo to the middle */
-        margin-bottom: 10px; /* Space between logo and menu */
-    }
-
     .navbar__menu {
         display: none; /* Hide menu items initially */
         width: 100%;
