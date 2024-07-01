@@ -1,16 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Board of Directors - Happy Dogs Surf Shop</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Board of Directors - Happy Dogs Surf Shop</title>
+        <link rel="stylesheet" href="styles.css">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LW0CG1FVR"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
     
+            gtag('config', 'G-6LW0CG1FVR');
+        </script>
+    </head>
+
 <nav class="navbar animate-on-scroll slideInDown">
     <div class="navbar__container">
         <a href="index.html" class="navbar__logo">
@@ -48,7 +55,7 @@
     </div>
 </nav>
 
-
+<body>
     <header id="boardheader">
         <div style="text-align:center;">
         </div>
@@ -132,5 +139,57 @@
         <hr>
         <p>Copyright &copy; 2024  Happy Dog Surf Shop. All rights reserved.</p>
     </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const sectionId = this.getAttribute('href').substring(1);
+                const section = document.getElementById(sectionId);
+
+                window.scrollTo({
+                    top: section.offsetTop - 100, // Adjusted for header height or other offsets
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Function to handle animations on scroll
+        function handleScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            const windowHeight = window.innerHeight;
+            elements.forEach(el => {
+                const positionFromTop = el.getBoundingClientRect().top;
+                if (positionFromTop - windowHeight <= 0) {
+                    el.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('load', handleScroll);
+        document.addEventListener('DOMContentLoaded', function () {
+    const videos = document.querySelectorAll('video[autoplay]');
+    videos.forEach(video => {
+        video.addEventListener('ended', function () {
+            // Restart the video
+            this.currentTime = 0;
+            this.play();
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const mobileMenu = document.getElementById("mobile-menu");
+    const menuItems = document.getElementById("menu-items");
+    
+    mobileMenu.addEventListener("click", function() {
+        menuItems.classList.toggle("active");
+    });
+});
+
+
+
+    </script>
 </body>
 </html>
