@@ -92,6 +92,30 @@ header p {
     height: auto;
     margin-top: 5px;
 }
+#partnerheader {
+    background-image: url('./HappyDogSurfShopPics/partnerpic.png');
+    background-size: cover; 
+    color: white;
+    padding: 5em 1em;
+    text-align: center;
+    animation: fadeInUp 1s ease forwards;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#partnerheader img {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 5px;
+}
 
 nav {
     background: #1E90FF;
