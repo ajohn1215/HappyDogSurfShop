@@ -8,6 +8,15 @@ body {
     min-height: 100vh;
 }
 
+#boardheader {
+    background: url('./HappyDogSurfShopPics/boardgrouppic.jpg') no-repeat center center;
+    background-size: cover;
+    color: rgb(12, 12, 12);
+    padding: 12em 2em;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -19,7 +28,7 @@ body {
     }
 }
 #indexheader {
-    background: url('./HappyDogSurfShopPics/homepage\ background.jpg') no-repeat center center;
+    background: url('./HappyDogSurfShopPics/homepagebackground.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     padding: 4em 1em;
@@ -58,47 +67,6 @@ header p {
     }
 }
 
-.shop {
-    width: calc(25% - 4000px);
-}
-
-.mission-content {
-    display: flex;
-    align-items: center; 
-    justify-content: flex-start; 
-    margin-top: 20px; 
-}
-
-.mission-img {
-    width: 200px; 
-    margin-right: 20px; 
-}
-
-.mission-text {
-    flex: 1; 
-}
-
-.mission-description {
-    font-size: 18px; 
-    text-align: left; 
-    color: #333; 
-}
-
-.double-spaced {
-    text-align: left; 
-}
-
-.double-spaced ul {
-    list-style-type: disc; 
-    padding-left: 18px; 
-}
-
-.double-spaced li {
-    font-size: 18px; 
-    line-height: 1.5; 
-    color: #333; 
-}
-
 
 #sponsorheader {
     background-image: url('./HappyDogSurfShopPics/sponsorbackground.jpg');
@@ -125,30 +93,6 @@ header p {
     margin-top: 5px;
 }
 
-#partnerheader {
-    background-image: url('./HappyDogSurfShopPics/sponsorbackground.jpg');
-    background-size: cover; 
-    color: white;
-    padding: 5em 1em;
-    text-align: center;
-    animation: fadeInUp 1s ease forwards;
-}
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-#partnerheader img {
-    width: 30%;
-    max-width: 300px;
-    height: auto;
-    margin-top: 5px;
-}
 nav {
     background: #1E90FF;
     height: 80px;
@@ -267,7 +211,69 @@ input[type="checkbox"] {
         transform: scale(1);
     }
 }
-
+.board-member {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: slideInUp 1s ease-in-out forwards;
+}
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.board-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    animation: rotateIn 1s ease-in-out forwards;
+}
+@keyframes rotateIn {
+    0% {
+        opacity: 0;
+        transform: rotate(-180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+.board-member div {
+    max-width: 600px;
+    animation: fadeInLeft 1s ease-in-out forwards;
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.board-member h3 {
+    margin: 0.5em 0;
+    font-size: 1.5em;
+}
+.board-member p {
+    margin: 0.5em 0;
+    line-height: 1.6;
+}
 .sponsor {
     background-color: white;
     padding: 1em;
@@ -370,7 +376,7 @@ h2 {
 }
 footer {
     background-color: #1E90FF;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -379,13 +385,13 @@ footer {
 
 footer .pages, footer .doc, footer .contact, footer .social {
     flex: 1 1 180px;
-    margin: 5px;
+    margin: 10px;
     text-align: center;
 }
 
 footer .pages img {
     width: 100%;
-    max-width: 100px;
+    max-width: 200px;
     height: auto;
 }
 
@@ -395,14 +401,14 @@ footer .pages p {
     color: rgba(255, 226, 243, 0.808);
     width: 90%;
     margin: 0 auto;
-    font-size: 80%;
+    font-size: 90%;
 }
 
 footer .pages a {
     text-decoration: none;
     margin: 10px;
     color: rgba(255, 226, 243, 0.808);
-    font-size: 30px;
+    font-size: 24px;
 }
 
 footer .pages a:hover {
@@ -411,7 +417,7 @@ footer .pages a:hover {
 
 footer .doc h3, footer .social h3, footer .contact h3 {
     color: rgb(255, 226, 243);
-    font-size: 30px;
+    font-size: 24px;
     padding: 5px;
     font-weight: bold;
 }
@@ -453,7 +459,7 @@ footer .side_btn a:hover {
     color: black;
     font-weight: bolder;
     border: none;
-    border: 4px solid white;
+    border: 4px solid green;
     transition: 0.5s;
 }
 
@@ -465,196 +471,30 @@ footer p {
     margin-top: 20px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-.executive-board {
-    text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9;
-}
 
-.header {
-    margin-bottom: 20px;
-}
-
-.header h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.header p {
-    font-size: 36px;
-    color: #666;
-}
-
-.board-members {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-@keyframes slideInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes rotateIn {
-    0% {
-        opacity: 0;
-        transform: rotate(-180deg);
-    }
-    100% {
-        opacity: 1;
-        transform: rotate(0);
-    }
-}
-
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.member {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 20px;
-    max-width: 200px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.member img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-
-.member h3 {
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-.member p {
-    font-size: 20px;
-    color: #333;
-    margin: 5px 0;
-}
-
-.member a {
-    display: block;
-    font-size: 20px;
-    color: #007BFF;
-    text-decoration: none;
-    margin: 5px 0;
-}
-
-.member a:hover {
-    text-decoration: underline;
-}
-
-.board-members {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px; 
-}
-
-.member {
-    /* Adjusted styles */
-    flex: 0 1 calc(40% - 10px);
-    max-width: calc(40% - 10px); 
-    margin: 10px; 
-    padding: 20px; 
-}
-
-.member img {
-    width: 100%; 
-    height: auto; 
-    border-radius: 5%; 
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.biographies {
-    padding: 100px;
-    text-align: center;
-}
-
-.bio-content {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 200px;
-}
-
-.bio-content img {
-    width: 400px; 
-    height: 400px; 
-    border-radius: 5px;
-    margin-left: 5px; 
-}
-
-.bio-text {
-    flex: 1; 
-    text-align: left;
-    margin-left: 20px; 
-}
-
-.bio-text h1 {
-    font-size: 50px;
-    color: #0056b3;
-    margin-bottom: 20px;
-}
-
-.bio-text p {
-    font-size: 20px;
-    color: #333;
-    line-height: 1.5;
-}
-
-.bio-text a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.bio-text a:hover {
-    text-decoration: underline;
-}
-
-.linkedin-link {
-    margin-top: 10px; 
-}
-
-.linkedin-link img {
-    width: 50px;
-    height: auto;
-}
-
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (max-width: 768px) {
+            .board-member img {
+                width: 120px;
+                height: 120px;
+            }
+            .board-member h3 {
+                font-size: 1.3em;
+            }
+            .board-member p {
+                font-size: 0.9em;
+            }
+        }
         section {
             margin-bottom: 2em;
             animation: fadeInUp 1s ease-in-out forwards;
